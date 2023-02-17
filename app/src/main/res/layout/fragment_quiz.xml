@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragments.QuizFragment"
+    android:padding="5dp"
+    android:background="@drawable/quiz2">
+
+    <LinearLayout
+        android:layout_width="357dp"
+        android:layout_height="261dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginBottom="70dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/quiztextView"
+        android:background="#DCECEA">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonA"
+
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/button_bg"
+            android:text="a Button"
+            android:textColor="#0B0A0A"
+            app:cornerRadius="15dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonB"
+
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="5dp"
+            android:text="b Button"
+            app:cornerRadius="15dp"
+            android:textColor="#0B0A0A"
+            android:background="@drawable/button_bg" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonC"
+
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="c Button"
+            android:textColor="#0B0A0A"
+            android:background="@drawable/button_bg" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonD"
+
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="d buttton"
+            app:cornerRadius="15dp"
+            android:textColor="#0B0A0A"
+            android:background="@drawable/button_bg" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/quiztextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:background="@drawable/quiz_bg"
+        android:padding="15dp"
+        android:text="Which's Turkey's capital?"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/countTimer" />
+
+    <TextView
+        android:id="@+id/countTimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text=" Time: 30"
+        android:textSize="30sp"
+        android:padding="5dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/timer_bg" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
