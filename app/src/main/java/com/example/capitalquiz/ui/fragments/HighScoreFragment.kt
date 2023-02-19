@@ -62,14 +62,6 @@ class HighScoreFragment : Fragment() {
         getLeaderboard()
 
 
-        val callback=object :OnBackPressedCallback(true){
-            override fun handleOnBackPressed() {
-                findNavController().navigate(R.id.action_highScoreFragment_to_loginFragment2)
-            }
-
-        }
-
-        requireActivity().onBackPressedDispatcher.addCallback(callback)
 
 
     }
