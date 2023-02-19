@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.fragments.LoginFragment"
+    android:padding="15dp"
     android:background="#E4E1E1">
 
 
@@ -13,20 +14,21 @@
         android:layout_width="56dp"
         android:layout_height="46dp"
         android:layout_marginTop="16dp"
-        android:layout_marginEnd="8dp"
         android:src="@drawable/leadaerboar_icon"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.907"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.cardview.widget.CardView
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-
-        android:layout_marginEnd="10dp"
-        android:layout_marginBottom="130dp"
         app:cardCornerRadius="7dp"
         android:elevation="10dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        app:layout_constraintVertical_bias="0.4"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

@@ -103,7 +103,6 @@ class QuizFragment : Fragment() {
                     for(i in list){
                         countriesList.add(i)
                     }
-
                      addQuestion(countriesList)
                 }
             }
@@ -126,7 +125,6 @@ class QuizFragment : Fragment() {
         btnColor()
         allQuestion= hashSetOf()
         wrongQuestionList=ArrayList()
-        truequestions= countriesList[randomValue]
         for (i in wrongQuestionRandom){
             if(countriesList[i].capital==""){
                 allQuestion.add(countriesList[i+1].capital)
@@ -138,9 +136,12 @@ class QuizFragment : Fragment() {
 
         if (truequestions.capital==""){
             truequestions=countriesList[randomValue+1]
+        }else{
+            truequestions=countriesList[randomValue]
         }
 
         allQuestion.add(truequestions.capital)
+
         binding.buttonA.text=allQuestion.elementAt(0)
         binding.buttonB.text=allQuestion.elementAt(1)
         binding.buttonC.text=allQuestion.elementAt(2)
